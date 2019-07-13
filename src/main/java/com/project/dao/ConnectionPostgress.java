@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-public class ConnectionPostgress {
+public class ConnectionPostgress implements ConnectionDao{
     private static final String DRIVER = "org.postgresql.Driver";
     private static final String URL = "jdbc:postgresql://127.0.0.1:5433/myapp_data";
     private static final String USER = "postgres";
